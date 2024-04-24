@@ -3,32 +3,16 @@ import { getRecordForPatient, getRecordPatients, createNewPatient, updateRecordP
 
 const DateNow = new Date();
 
-const create = async (patient) => {
-  const newPatient = {
-    id: v4(),
-    ...patient,
-    created_at: DateNow
-  };
-  try {
-    await createNewPatient(newPatient)
-  
-    return newPatient;
-  } catch (error) {
-    throw { status: error?.status || 500, message: error?.message || error}
-  }
-};
-
-const getPatient = async (id) => {
+const getOnePatient = async (id) => {
   try {
     const patient = getRecordForPatient(id);
     return patient;
-    
   } catch (error) {
     throw { status: error?.status || 500, message: error?.message || error}
   }
 };
 
-const getPatients = () => {
+const getAllPatients = () => {
   try {
     return getRecordPatients(); 
   } catch (error) {
@@ -36,7 +20,21 @@ const getPatients = () => {
   }
 };
 
-const update = async (id, patient) => {
+const createPatient = async (patient) => {
+  const newPatient = {
+    id: v4(),
+    ...patient,
+    created_at: DateNow
+  };
+  try {
+    await createNewPatient(newPatient)
+    return newPatient;
+  } catch (error) {
+    throw { status: error?.status || 500, message: error?.message || error}
+  }
+};
+
+const updatePatient = async (id, patient) => {
   try {
     const resultUpdate = updateRecordPatient(id, patient);
     return resultUpdate;
@@ -45,7 +43,7 @@ const update = async (id, patient) => {
   }
 };
 
-const remove = async (id) => {
+const removePatient = async (id) => {
   try {
     const removeRecord = removeRecordPatient(id);
     return removeRecord;
@@ -54,4 +52,4 @@ const remove = async (id) => {
   }
 };
 
-export { create, getPatient, getPatients, update, remove };
+export { getOnePatient, getAllPatients, createPatient, updatePatient, removePatient };
