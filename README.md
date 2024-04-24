@@ -1,10 +1,10 @@
 # api-rest-inui
 
-## Descripción
+## Description
 
 This api-rest allows you to manage (GET, LIST, CREATE, UPDATE, DELETE) patient information for doctors and add notes (CREATE, LIST_NOTE_PATIENT)
 
-## Instalación
+## Install
 
 ## Install dependencies:
 ``$ npm i ``
