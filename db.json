@@ -1,0 +1,82 @@
+{
+  "patients": [
+    {
+      "id": "e8b6c945-4244-e8b6-b1fc-c9a173c7b1fc",
+      "firt_name": "Pedro",
+      "last_name": "zapata",
+      "type_doc": "CC",
+      "document": "11308329",
+      "birthday": "01/01/1994",
+      "phone": "3242352352",
+      "landline": "4538634",
+      "occupation": "Independiente",
+      "address": "Calle 43 # 43-42",
+      "entity": "Sura Capital",
+      "type_attention": "Consulta de Psiquiatria",
+      "status": "Moderado",
+      "created_at": "2024-04-19T23:02:23.359Z"
+    },
+    {
+      "id": "1b793f1d-5904-4817-8355-b149820c06cf",
+      "firt_name": "Maria",
+      "last_name": "Castillo",
+      "type_doc": "CE",
+      "document": "1130234833",
+      "birthday": "16/04/2024",
+      "phone": "23542325325",
+      "landline": "3434534",
+      "occupation": "Odontologa",
+      "address": "Cra 22 # 45-34",
+      "entity": "Sura Capital",
+      "type_attention": "Consulta de Sicologia",
+      "status": "Moderado",
+      "created_at": "2024-04-19T23:02:23.359Z"
+    },
+    {
+      "id": "efe73383-c183-4da9-817c-e15093faf47d",
+      "firt_name": "Jose Omar",
+      "last_name": "Parra",
+      "type_doc": "CE",
+      "document": "25327876",
+      "birthday": "Invalid Date",
+      "phone": "3185748596",
+      "landline": "3245785",
+      "occupation": "Tecnico",
+      "address": "Calle 34 # 49-21",
+      "entity": "Sura Capital",
+      "type_attention": "Consulta de Psiquiatria",
+      "status": "Estable",
+      "created_at": "2024-04-24T03:13:11.361Z"
+    },
+    {
+      "id": "c3751834-fa7c-47e4-ab18-7a3d14a4e907",
+      "firt_name": "Andres",
+      "last_name": "Lopez",
+      "type_doc": "CC",
+      "document": "12122324312",
+      "birthday": "Invalid Date",
+      "phone": "3248754252",
+      "landline": "3245689",
+      "occupation": "Independiente",
+      "address": "Calle 34 # 98-89",
+      "entity": "Sura Capital",
+      "type_attention": "Consulta de Sicologia",
+      "status": "Estable",
+      "created_at": "2024-04-24T03:19:32.416Z"
+    }
+  ],
+  "notes": [
+    {
+      "id": "52b44d56-7f49-4a2a-8782-e3d0ec8520cd",
+      "patientId": "e8b6c945-4244-e8b6-b1fc-c9a173c7b1fc",
+      "description": "Dolor abdominal, requiere otros tipos de examenes",
+      "created_at": "2024-04-24T03:13:11.361Z"
+    },
+    {
+      "id": "34c1cf4d-2ab1-4c01-ab54-f6d511196fc2",
+      "patientId": "c3751834-fa7c-47e4-ab18-7a3d14a4e907",
+      "description": "Tiene dolor de espalda, envio para sacar rediografia",
+      "created_at": "2024-04-24T03:19:32.416Z"
+    }
+  ]
+}
